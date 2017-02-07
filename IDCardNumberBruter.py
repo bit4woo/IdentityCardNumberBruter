@@ -25,8 +25,8 @@ def calculate(identity):
             sum = sum + (int(identity[i]) * weight[i])
         if identity[-1] == checkcode[(sum%11)]:
             return identity
-	else:
-		return 0
+    else:
+        return 0
 
 def getDays(year): #1989
     date_list = []
