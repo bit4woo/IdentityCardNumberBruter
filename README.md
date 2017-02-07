@@ -7,9 +7,9 @@ To Find Possibe ID Card Number
 
 #usage
 
-IDCardNumber.py 5115261989****1125
+IDCardNumberBruter.py 6221261980****3456
 
-![](http://i.imgur.com/ZPmusFb.jpg)
+![](http://i.imgur.com/xbCyZm5.jpg)
 
 #怎么找出哪个是真实有效的呢？
 
