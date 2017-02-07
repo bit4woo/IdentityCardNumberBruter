@@ -48,7 +48,7 @@ if __name__ == "__main__":
             sum = sys.argv[1][-1]
             #print year
             #print sum
-			print "Possible ID card Numbers:"
+            print "Possible ID card Numbers:"
             for x in getDays(year):
                    ID =calculate(sys.argv[1].replace("****",x))
                    #print ID
