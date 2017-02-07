@@ -20,13 +20,13 @@ def calculate(identity):
     }
 
     sum = 0
-    if len(identity) !=18:
-        return 0
-    else:
+    if len(identity) ==18:
         for i in range(0,17): #0-16
             sum = sum + (int(identity[i]) * weight[i])
-        identity = "{0}{1}".format(identity, checkcode[(sum%11)])
-        return identity
+        if identity[-1] == checkcode[(sum%11)]:
+            return identity
+	else:
+		return 0
 
 def getDays(year): #1989
     date_list = []
@@ -52,7 +52,7 @@ if __name__ == "__main__":
             for x in getDays(year):
                    ID =calculate(sys.argv[1].replace("****",x))
                    #print ID
-                   if str(ID).endswith(sum):
+                   if ID != 0:
                        print ID
     else:
         print "Please input the Identity Number, example: 4452811995****7041"
